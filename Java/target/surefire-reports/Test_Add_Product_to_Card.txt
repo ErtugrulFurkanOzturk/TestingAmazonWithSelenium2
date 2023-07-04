@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: Test_Add_Product_to_Card
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 7.096 s <<< FAILURE! - in Test_Add_Product_to_Card
+searchProduct  Time elapsed: 1.821 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#p_85\-title"}
+  (Session info: chrome=102.0.5005.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '2.3.2.187', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.62, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MS9AC9~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 42b0e84c74113268718df553a5a42ba7
+*** Element info: {Using=id, value=p_85-title}
+	at Test_Add_Product_to_Card.searchProduct(Test_Add_Product_to_Card.java:19)
+
+selectProduct  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at Test_Add_Product_to_Card.selectProduct(Test_Add_Product_to_Card.java:26)
+
+addProductToCard  Time elapsed: 0.011 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button"}
+  (Session info: chrome=102.0.5005.62)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '2.3.2.187', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.62, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MS9AC9~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 42b0e84c74113268718df553a5a42ba7
+*** Element info: {Using=id, value=add-to-cart-button}
+	at Test_Add_Product_to_Card.addProductToCard(Test_Add_Product_to_Card.java:33)
+
+gotoCardPage  Time elapsed: 1.55 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Product was not added to card !! ==> expected: <true> but was: <false>
+	at Test_Add_Product_to_Card.gotoCardPage(Test_Add_Product_to_Card.java:43)
+
